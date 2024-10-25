@@ -14,21 +14,16 @@ import java.awt.event.*;
 
 public class PetSelectorApp extends JFrame {
 
-    private final JRadioButton birdButton;
-    private final JRadioButton catButton;
-    private final JRadioButton dogButton;
-    private final JRadioButton rabbitButton;
-    private final JRadioButton pigButton;
+    private JRadioButton birdButton, catButton, dogButton, rabbitButton, pigButton;
     private final ButtonGroup petGroup;
     private final JLabel imageLabel;
     
     public PetSelectorApp() {
         //frame
-        setTitle("RadioButtonDemo");
+        setTitle("Pet Selector App");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
         
-        //panel for radio buttons
         JPanel radioPanel = new JPanel();
         radioPanel.setLayout(new BoxLayout(radioPanel, BoxLayout.Y_AXIS));
         
@@ -74,7 +69,6 @@ public class PetSelectorApp extends JFrame {
         add(radioPanel);
         add(imageLabel);
         
-        // Packing and setting visible
         pack();
         setSize(400, 300);
         setLocationRelativeTo(null);
