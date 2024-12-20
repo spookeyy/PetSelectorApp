@@ -14,7 +14,9 @@ import java.awt.event.*;
 
 public class PetSelectorApp extends JFrame {
 
-    private JRadioButton birdButton, catButton, dogButton, rabbitButton, pigButton;
+    private JRadioButton dogButton;
+    private JRadioButton rabbitButton;
+    private JRadioButton pigButton;
     private final ButtonGroup petGroup;
     private final JLabel imageLabel;
     
@@ -28,8 +30,8 @@ public class PetSelectorApp extends JFrame {
         radioPanel.setLayout(new BoxLayout(radioPanel, BoxLayout.Y_AXIS));
         
         // radio buttons
-        birdButton = new JRadioButton("Bird");
-        catButton = new JRadioButton("Cat");
+        JRadioButton birdButton = new JRadioButton("Bird");
+        JRadioButton catButton = new JRadioButton("Cat");
         dogButton = new JRadioButton("Dog");
         rabbitButton = new JRadioButton("Rabbit");
         pigButton = new JRadioButton("Pig");
